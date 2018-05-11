@@ -47,24 +47,10 @@
 <div class="parallax"></div>
 
 
-<!--<h1>Welcome to Culm Valley Carpets</h1>
-<h2>-Your local floor covering specialists-</h2>
+<h1>Other Flooring</h1>
 
-<p>Come and visit our newly revamped showroom, where we
-  have an enormous selection of top quality
-  brands at affordable prices.</p>
-
-<p>If it's a bargain you're looking for, then why not pop
-  in and take a
- look at our brand new remnant showroom.</p>
-
-<p>We are located just off J28 of the M5 at 8 Highstreet,
-Cullompton.</p>
-
-<p>For your convenience, we also offer a free measuring
-   and estimating service,
-along with a sample selection service from our
-mobile showroom.</p>-->
+<p>We offer a range of other
+   flooring in store to fit your needs</p>
 
 
 
@@ -72,8 +58,78 @@ mobile showroom.</p>-->
 
 
 
+<!--other slideshow-->
+
+<div class="other-slideshow-container">
 
 
+  <div class="othermySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./resources/images/other/VINYL.JPG" style="width:100%">
+    <div class="text">Vinyl</div>
+  </div>
+
+  <div class="othermySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./resources/images/other/MATTING.JPG" style="width:100%">
+    <div class="text">Matting</div>
+  </div>
+
+<div class="othermySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./resources/images/other/RUGS.JPG" style="width:100%">
+  <div class="text">Rugs</div>
+</div>
+
+
+</div>
+
+<a class="otherprev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="othernext" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="otherdot" onclick="currentSlide(1)"></span>
+  <span class="otherdot" onclick="currentSlide(2)"></span>
+  <span class="otherdot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("othermySlides");
+  var dots = document.getElementsByClassName("otherdot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" otheractive", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " otheractive";
+}
+</script>
+
+
+
+
+<!--<p>Listed below are a few of the
+  alternative options we can provide</p>-->
 
 
 

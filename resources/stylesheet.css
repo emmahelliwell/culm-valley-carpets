@@ -22,6 +22,11 @@ h3 {
   font-size: 1.2rem;
 }
 
+h4 {
+  font-family: papyrus;
+  font-size: 1.2rem;
+}
+
 p {
   text-align: center;
   font-size: 1rem;
@@ -383,3 +388,25 @@ p {
 
 /* Add an italic font style to all quotes */
 q {font-size: 1.2rem;}
+
+
+
+
+
+
+/*our shop links to gallery about us page */
+.aboutcontainer {
+    position: relative;
+    font-family: helvetica;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid white;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}

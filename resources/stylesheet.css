@@ -6,11 +6,11 @@ body {
 .topnav {
   overflow: hidden;
   background: none;
-  /*background: url("./images/carpet-roll-top.JPG");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  filter: alpha(opacity=50); */
+  display: inline-block;
+  background-color: black;
+  width: 100%;
+  margin: 0 0;
+
 }
 
 .topnav a {
@@ -19,34 +19,41 @@ body {
   color: #f2f2f2;
   text-align: center;
   padding: 10px 10px;
-  font-weight: bold;
+  font-weight: lighter;
   text-decoration: none;
   font-size: 17px;
+  color: azure;
+  margin: 0 0;
+
 }
 
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+
 }
 
 .active {
   background-color: #00a3cc;
   color: white;
+
 }
 
 .topnav .icon {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
+    position: absolute;
+    right: 0;
     display: block;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -60,73 +67,118 @@ body {
   }
 }
 
-.heroimg {
-  background: url("./images/carpet-roll-top.JPG");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  opacity: 0.2);
-  filter: alpha(opacity=20);
-}
-
 .header {
-  /*background-color: gray; */
+  background-color: gray;
   width: 100%;
   height: 80px;
+  margin: 0 0;
 }
+
+@media screen and (max-width: 500px) {
+  .TitleLogo {
+    width: 90%;
+    height: 90%;
+    float: center;
+    text-align: center;
+  }
+  }
+
 .TitleLogo {
   height: 70px;
   padding-top: 5px;
   padding-bottom: 5px;
-}
-/*footer nav bar*/
-.btn-group button {
-    background-color: #333333;
-    border: 1px solid #333333;
-    color: white;
-    padding: 0 0 0 0;
-    cursor: pointer;
-    width: 100%;
-    display: block;
-    font-family: papyrus, fantasy;
-    margin: none;
+  margin: 2px auto;
 }
 
-.btn-group button:not(:last-child) {
-    border-bottom: none;
+.parallax {
+  background-image: url("./images/Stainfree_BoutiqueEDITED.JPG");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0;
+
 }
 
-/* Add a background color on hover */
-.btn-group button:hover {
-    background-color: #ddd;
-    color: black;
-}
+
 h3 {
   text-align: center;
 }
 p {
   text-align: center;
-  font-family: arial;
+  font-family: helvetica;
 }
+
 .areas {
-  background-color: #ddd;
+  background: url("./images/icons/CVC_map2.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
   width: 100%;
-  padding: 5px 0 0 0;
-  position: absolute;
-  bottom: 0px;
+  margin: 0px auto;
+  float: center;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
 }
-#InfoFooter {
-  background-color: gray;
-  width: 100%;
-  padding: 10px;
+
+.culmmap {
+  position: relative;
+  background-image: url("./images/culmvalleymap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  z-index: 1;
+}
+#areatitle {
+    color: white;
+    font-size: 150%;
+    padding-top: 0px;
+}
+
+#areatext {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.8em;
+  padding-bottom: 0px;
   color: white;
-  font-size: 12px;
-  display: inline-block;
-  position: absolute;
-  bottom: 35px;
+  font-size: 100%;
 }
-#footerNav {
-  position: absolute;
+
+@media screen and (max-width: 500px) {
+  .phoneno {
+    display: none;
+  }
+  }
+.phoneno {
+  float: right;
+  font-size: 18px;
+  max-width: 200px;
+  color: white;
+  padding-top: 15px;
+  font-weight: lighter;
+  padding-right: 10px;
+}
+
+.areabox {
+  margin: 50px auto 30px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 450px;
+  padding: 0px 10px 10px 10px;
+  border: 5px solid white;
+}
+
+.space-filler {
+  background-color: white;
+  position: relative;
   bottom: 0px;
-  width: 100%;
+  height: 30px;
+  z-index: 0;
 }

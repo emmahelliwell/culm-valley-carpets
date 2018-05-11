@@ -3,6 +3,27 @@ body {
   font-family: Papyrus, fantasy;
 }
 
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: helvetica;
+}
+
 .container {
 
 }
@@ -112,14 +133,6 @@ body {
 
 }
 
-
-h3 {
-  text-align: center;
-}
-p {
-  text-align: center;
-  font-family: helvetica;
-}
 
 .areas {
   background: url("./images/icons/CVC_map2.PNG");

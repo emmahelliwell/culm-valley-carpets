@@ -398,7 +398,7 @@ q {font-size: 1.2rem;}
 .aboutcontainer {
     position: relative;
     font-family: helvetica;
-    max-height: 400px;
+    max-height: 300px;
     overflow: hidden;
 }
 
@@ -411,4 +411,45 @@ q {font-size: 1.2rem;}
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+
+
+
+
+/*carpet page carpet cards*/
+/*selling point cards*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.carpetcolumn {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 500px) {
+  .carpetcolumn {
+    width: 100%;
+    display: block;
+  }
+}
+
+.carpetcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+}
+
+.container2::after, .carpetrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }

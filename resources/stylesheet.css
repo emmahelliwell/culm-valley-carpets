@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Papyrus, fantasy;
@@ -211,6 +215,9 @@ p {
   z-index: 0;
 }
 
+
+/*social circles style*/
+
 @media screen and (max-width: 450px) {
   .socialcircles {
       margin: 0 auto;
@@ -235,6 +242,8 @@ p {
     margin: 0 auto;
     width: 100%;
     position: relative;
+    clear: both;
+    float: none;
 }
 
 .socialcircles a:hover {
@@ -254,4 +263,50 @@ p {
 
 .social-icons {
   height: 70px;
+}
+
+
+
+
+
+/*selling point cards*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+  padding: 0 16px;
+}
+
+.container2::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }

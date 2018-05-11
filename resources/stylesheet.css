@@ -319,7 +319,7 @@ p {
 
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background: white;
   margin: 10px auto;
 }
 
@@ -362,7 +362,6 @@ p {
 .dot-container {
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* The dots/bullets/indicators */

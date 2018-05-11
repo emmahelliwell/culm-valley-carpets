@@ -47,24 +47,87 @@
 <div class="parallax"></div>
 
 
-<!--<h1>Welcome to Culm Valley Carpets</h1>
-<h2>-Your local floor covering specialists-</h2>
+<h1>Remnants</h1>
 
-<p>Come and visit our newly revamped showroom, where we
-  have an enormous selection of top quality
-  brands at affordable prices.</p>
 
-<p>If it's a bargain you're looking for, then why not pop
-  in and take a
- look at our brand new remnant showroom.</p>
+<p>We now stock a large varied
+  selection of room size carpet and vinyl
+  Remnnants at hugely discounted prices. </p>
+
+<p>Sizes and colours available change on a
+  daily basis, so why not pop in to see our new
+   remnant warehouse and grab yourself a
+   genuine bargain. </p>
 
 <p>We are located just off J28 of the M5 at 8 Highstreet,
 Cullompton.</p>
 
-<p>For your convenience, we also offer a free measuring
-   and estimating service,
-along with a sample selection service from our
-mobile showroom.</p>-->
+
+<!--remnant slideshow-->
+
+<div class="remnants-slideshow-container">
+
+  <div class="remnantsmySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./resources/images/remnants/Vinylremnants.PNG.jpg" style="width:100%">
+    <div class="text">Vinyl Remnants</div>
+  </div>
+
+<div class="remnantsmySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./resources/images/remnants/remnantwall.PNG.jpg" style="width:100%">
+  <div class="text">Hundreds of Remnants</div>
+</div>
+
+<div class="remnantsmySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./resources/images/remnants/warehouse.JPG" style="width:100%">
+  <div class="text">Remnant Warehouse</div>
+</div>
+
+</div>
+
+<a class="remnantsprev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="remnantsnext" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="remnantsdot" onclick="currentSlide(1)"></span>
+  <span class="remnantsdot" onclick="currentSlide(2)"></span>
+  <span class="remnantsdot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("remnantsmySlides");
+  var dots = document.getElementsByClassName("remnantsdot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" remnantsactive", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " remnantsactive";
+}
+</script>
+
 
 
 

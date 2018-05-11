@@ -58,6 +58,82 @@
 
 
 
+
+
+
+
+<!--carpet slideshow-->
+
+<div class="carpet-slideshow-container">
+
+  <div class="carpetmySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./resources/images/Stainfree_Berber_DeluxeEDITED.JPG" style="width:100%">
+    <div class="text">Stainfree Berber Deluxe</div>
+  </div>
+
+<div class="carpetmySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./resources/images/Stainfree_BoutiqueEDITED.JPG" style="width:100%">
+  <div class="text">Stainfree Boutique</div>
+</div>
+
+
+
+<div class="carpetmySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="carpetprev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="carpetnext" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="carpetdot" onclick="currentSlide(1)"></span>
+  <span class="carpetdot" onclick="currentSlide(2)"></span>
+  <span class="carpetdot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("carpetmySlides");
+  var dots = document.getElementsByClassName("carpetdot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" carpetactive", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " carpetactive";
+}
+</script>
+
+
+
+
+
+
+
+
 <!--carpet brands responsive images-->
 <div class="carpetrow">
   <div class="carpetcolumn">
@@ -126,18 +202,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

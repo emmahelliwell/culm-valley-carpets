@@ -398,6 +398,8 @@ q {font-size: 1.2rem;}
 .aboutcontainer {
     position: relative;
     font-family: helvetica;
+    max-height: 400px;
+    overflow: hidden;
 }
 
 .text-block {

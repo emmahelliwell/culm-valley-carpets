@@ -3,6 +3,15 @@ body {
   font-family: Papyrus, fantasy;
 }
 
+.container {
+
+}
+
+#myTopnav {
+  margin: 0 0;
+  padding: 0 0;
+}
+
 .topnav {
   overflow: hidden;
   background: none;
@@ -10,7 +19,9 @@ body {
   background-color: black;
   width: 100%;
   margin: 0 0;
-
+  padding: 0 0;
+  float:left;
+  clear:none;
 }
 
 .topnav a {
@@ -86,7 +97,7 @@ body {
   height: 70px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin: 2px auto;
+  margin: 0px auto;
 }
 
 .parallax {
@@ -97,6 +108,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 0;
+  padding: 0;
 
 }
 

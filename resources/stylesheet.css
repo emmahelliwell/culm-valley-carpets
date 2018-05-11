@@ -156,6 +156,7 @@ p {
     display: none;
   }
   }
+
 .phoneno {
   float: right;
   font-size: 18px;
@@ -182,12 +183,30 @@ p {
   z-index: 0;
 }
 
+@media screen and (max-width: 450px) {
+  .socialcircles {
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+  }
+  .socialcircles li {
+    display: inline-block;
+    width: 5px;
+  }
+  .socialcircles ul {
+    margin: 0px auto;
+    text-align: center;
+  }
+  .social-icons {
+    height: 40px;
+  }
+  }
 
+/*outside media query*/
 .socialcircles {
     margin: 0 auto;
     width: 100%;
     position: relative;
-    display: inline-block;
 }
 
 .socialcircles a:hover {
@@ -196,11 +215,15 @@ p {
 
 .socialcircles li {
   display: inline-block;
-  margin: 0 auto;
-  
+  width: 80px;
+}
+
+.socialcircles ul {
+  margin: 2px auto;
+  text-align: center;
+  padding: 0 0;
 }
 
 .social-icons {
-  width: 60px;
-  margin: 0 auto;
+  height: 70px;
 }
